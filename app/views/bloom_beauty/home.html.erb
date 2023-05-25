@@ -1,28 +1,12 @@
-<h1 class="center1"><a href="http://127.0.0.1:3000/products">Bloom Beauty</a></h1>
-.center1 {
-  text-align: center;
-  font-size: 100px;
-  color: #5e310c;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* thêm bóng đổ cho chữ */
-  transition: all 0.2s ease-in-out; /* thêm hiệu ứng transition cho chữ */
-}
 
-<h2 class="center2">Bloom Beauty was born to give you a healthy, youthful and vibrant skin and hair from simple and close sources of ingredients that you eat every day.</h2>
-.center2 {
-  text-align: center;
-  font-size: 20px; /* phóng to kích thước chữ */
-  color: #5e310c; /* thay đổi màu sắc chữ */
-  transition: all 0.2s ease-in-out; /* thêm hiệu ứng transition cho chữ */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* thêm bóng đổ cho chữ */
-}
-.center2:hover {
-  transform: translate(2px, -2px); /* làm cho chữ chuyển động khi rê chuột vào */
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5); /* tăng độ mờ của bóng đổ khi rê chuột vào */
-}
+<h1 class="center1" style="text-align: center; font-size: 100px; color: #5e310c; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); transition: all 0.2s ease-in-out;" onmouseover="this.style.transform = 'translate(2px, -2px)'; this.style.textShadow = '4px 4px 6px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform = ''; this.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';">
+  <a href="/products">Bloom Beauty</a>
+</h1>
+<h1 class="center2" style="text-align: center; font-size: 20px; color: #5e310c; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); transition: all 0.2s ease-in-out;" onmouseover="this.style.transform = 'translate(2px, -2px)'; this.style.textShadow = '4px 4px 6px rgba(0, 0, 0, 0.5)';" onmouseout="this.style.transform = ''; this.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.5)';">
+  <a href="/products">Bloom Beauty was born to give you a healthy, youthful and vibrant skin and hair from simple and close sources of ingredients that you eat every day.</a>
+</h1>
+
+
+
+
 <%= image_tag("BloomBeauty.jpg") %>
-img { /* căn giữa */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
